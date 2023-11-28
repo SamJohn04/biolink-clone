@@ -42,3 +42,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 100% 0;
+  }
+  100% {
+      background-position: -100% 0;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #000000, #fdb712,#db4df8, #000000, #000000);;
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientAnimation 5s linear infinite;
+}
