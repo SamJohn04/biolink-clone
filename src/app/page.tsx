@@ -1,10 +1,11 @@
 import Image from "next/image";
 import star from "../../public/star.png";
 import NavBar from "./components/navBar";
+import ThemeBox from "./components/themeBox";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-full min-h-screen bg-white ">
+    <main className="flex flex-col w-full h-full min-h-screen bg-[#f7f6f6]">
       <NavBar />
       <section
         id="home"
@@ -52,9 +53,24 @@ export default function Home() {
           </label>
         </div>
       </section>
-      <section id='about' className="flex flex-col items-center justify-center text-black">
+      <section id='about' className="flex flex-col items-center justify-center text-black p-5">
         <h1 className="text-[4rem]  font-inter">Unmatchable features. </h1>
         <h1 className="text-[4rem] font-inter text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600" >Free , forever. </h1>
+        <div className="flex flex-col gap-8 p-5">
+          <div className="flex gap-8">
+            <ThemeBox text="Pick a theme or design your own" image='/themes.png' />
+            <ThemeBox text="Pick a theme or design your own" image='/theme2.png' />
+          </div>
+          <div className="flex gap-8">
+            <ThemeBox text="Pick a theme or design your own" image='/theme3.png' />
+            <ThemeBox text="Pick a theme or design your own" image='/theme4.png' />
+          </div>
+
+        </div>
+      </section>
+
+      <section id='smthn' className="flex flex-col items-center justify-center text-black p-5">
+
       </section>
     </main>
   );
