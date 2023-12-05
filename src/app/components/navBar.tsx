@@ -6,7 +6,7 @@ function NavBar() {
       <div className="md:w-[70%] w-[95%] h-full bg-white m-2 z-2 rounded-full shadow-md text-slate-800 font-semibold">
         <div className="flex items-center justify-between">
           <div className="flex gap-6  p-7 ">
-            <label>Logo</label>
+            <label>LOGO</label>
             <label className="md:flex hidden">Features</label>
             <label className="md:flex hidden">FAQ</label>
           </div>
