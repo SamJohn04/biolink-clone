@@ -2,10 +2,11 @@ import Image from "next/image";
 import star from "../../public/star.png";
 import NavBar from "./components/navBar";
 import ThemeBox from "./components/themeBox";
+import MyScrollComponent from "./components/scrollDiv";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-full min-h-screen bg-[#f7f6f6]">
+    <main className="flex flex-col w-full h-full min-h-screen bg-[#f7f6f6] overflow-x-hidden">
       <NavBar />
       <section
         id="home"
@@ -69,7 +70,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='smthn' className="flex flex-col items-center justify-center text-black p-5">
+      <section id='smthn' className="flex flex-col items-center justify-center text-black">
+<MyScrollComponent/>
+      </section>
+
+      <section id='smthn' className="flex flex-col items-center justify-center text-black min-h-screen ">
 
       </section>
     </main>

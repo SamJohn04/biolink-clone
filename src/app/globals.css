@@ -69,13 +69,3 @@ body {
   animation: gradientAnimation 5s linear infinite;
 }
 
-.scroll-trigger {
-  height: 100vh;
-  background-color: black;
-  color: white;
-  transition: height 0.5s;
-}
-
-.scroll-trigger.expanded {
-  height: 100%;
-}
