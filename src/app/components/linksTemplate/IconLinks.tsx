@@ -11,10 +11,10 @@ export default function IconLinks({ iconLinks }: { iconLinks: IconLink[] }) {
         WhatsApp
     }
     return (
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-4 justify-center pb-8">
             {iconLinks.map((link, index) => {
                 const Icon = icons[link.iconName]
-                return (<a key={index} href={link.link} target="_blank" rel="noreferrer" className="transition-all duration-200 hover:scale-[1.1]"><Icon color="primary" fontSize="large"/></a>)
+                return (<a key={index} href={link.link} target="_blank" rel="noreferrer" className="transition-all duration-200 hover:scale-[1.1] h-full w-auto"><Icon fontSize="large"/></a>)
             })}
         </div>
     )

@@ -20,7 +20,8 @@ export default function LinkPage({ params }: {params: {username: string}}) {
             }, {
                 link: "https://github.com/SamJohn04/code-craft-sih",
                 title: "Project Orbit",
-                imgSrc: 'https://samuel-john-bio.vercel.app/project-orbit.png'
+                imgSrc: 'https://samuel-john-bio.vercel.app/project-orbit.png',
+                focus: true
             }],
             iconLinks: [{
                     iconName: 'GitHub',
